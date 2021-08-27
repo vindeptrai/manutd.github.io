@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixture</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            width: 100%;
+            height: 240px;
+            background-color: #37003c;
+            position: relative;
+            background-image: url(https://www.premierleague.com/resources/prod/d34efdf-3658/i/bg-elements/heading-bg-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        #header .fixture-heading {
+            position: absolute;
+            color: #fff;
+            font-size: 50px;
+            top: 70px;
+            left: 30px;
+            padding: 10px 30px;
+            font-weight: 600;
+              
+        }
+
+        #header .ball-icon {
+
+        }
+
+        #match {
+            padding: 20px;
+        }
+
+        #match .time-fixture {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        #match .team-fixture {
+            position: relative;
+            background: linear-gradient(270deg,#ff2882,#963cff);
+            font-size: 22px;
+            padding: 18px 20px;
+            border: 1px solid #ccc;
+            font-weight: 0;
+            margin-bottom: 67px;
+            cursor: pointer;
+        }
+        
+        #match .quick-view {
+            color: #fff;
+            position: absolute;
+            top: 14px;
+            right: 20px;
+            font-size: 22px;
+            padding: 4px 7px;
+            border: none;
+            border-radius: 5px;
+            background-color: #37003c;
+            cursor: pointer;
+        }
+
+        #match .quick-view:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        } 
+
+        #match .clock-fixture {
+            background-color: #fff ;
+            padding: 4px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <p class="fixture-heading">Fixtures <i class="ball-icon fas fa-futbol"></i></p>
+        </div>
+
+        <div id="match">
+            <div class="match-over">
+                <h2 class="time-fixture">Sunday 22 August 2021</h2>
+                <div class="team-fixture">
+                    <p class="team-fixture-desc">Southampton <span class="clock-fixture">20:00</span> Man Utd</p>
+                    <button class="quick-view">Quick View</button>
+                    
+                </div>
+
+                <h2 class="time-fixture">Sunday 29 August 2021</h2>
+                <div class="team-fixture">
+                    <p class="team-fixture-desc">Wolves <span class="clock-fixture">22:30</span> Man Utd</p>
+                    <button class="quick-view">Quick View</button>
+                </div>
+
+                <h2 class="time-fixture">Saturday 11 September 2021</h2>
+                <div class="team-fixture">
+                    <p class="team-fixture-desc">Man Utd <span class="clock-fixture">21:00</span> Newcastle</p>
+                    <button class="quick-view">Quick View</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

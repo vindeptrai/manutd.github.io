@@ -1,0 +1,559 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-while {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px; 
+}
+
+.col-third {
+    width: calc(100% / 4);
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+#main {
+
+}
+
+
+
+#header {
+    z-index: 1;
+    background-color: #c70101;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: #f5f6fa;
+    font-weight: 500;
+}
+
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 60px;
+    font-size: 15px;
+    display: block;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+
+#nav > li:hover > a {
+    color: #f5f6fa;
+    background-color: #111;
+}
+
+#nav .subnav li:hover a {
+    background-color: #111;
+    color: #f5f6fa;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.subnav > li > a {
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+/* nút more */
+#nav .fas {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+
+#header .mobile-menu-btn,
+#header .search {
+    float: right;
+    padding: 0 24px;
+    line-height: 60px;
+}
+
+
+#header .search:hover {
+    background-color: #111;
+    cursor: pointer;
+}
+
+#header .menu-icon,
+#header .search-icon {
+    font-size: 18x;
+    color: #fff;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+#slider {
+    position: relative;
+
+    margin-top: 60px;
+    padding-top: 50%;
+    background-image: url(https://scontent.fvca1-2.fna.fbcdn.net/v/t1.15752-9/234403668_1446634625703961_6206629907974593464_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=BTnzx4TGO0YAX_JkM0d&tn=QZl9_gLNl4m4Rm0F&_nc_ht=scontent.fvca1-2.fna&oh=4a41eb8ef31c8c141114fdb0a3a47ba7&oe=613E2E07);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    background-size: cover;
+    
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    color: #fff
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#slider .text-nickname {
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+
+#content {
+    
+}
+
+
+#content .content-section {
+    width: 1000px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#content .section-slogan {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .team-list {
+    margin-top: 30px;
+}
+
+#content .team-name {
+    font-size: 17px;
+}
+
+#content .team-img {
+    width: 200px;
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 2px;
+}
+
+#content .team-img:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* match tickets */
+.match-section {
+    background-color: #000;  
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tickets-list li {
+    padding: 11px 16px;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+    background-color: #f13b2e;
+    color: #fff;
+    margin-left: 16px;
+    padding: 4px 5px;
+}
+
+.tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #f13b2e;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+    margin-right: 20px;
+}
+/* match tickets */
+.places-list {
+    margin-top: 20px;
+    margin-bottom: 48px;
+    display: flex;
+}
+.place-item { 
+    width: 33.33333%;
+    padding: 0 8px;
+    float: left;
+}
+.place-img {
+    width: 100%;
+    height: 217px;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+    height: calc(100% - 217px);
+}
+
+.place-heading {
+    font-weight: bold;
+}
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc {
+    margin-top: 15px;
+}   
+.place-buy-btn {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.place-buy-btn:hover {
+    background-color: #f13b2e;
+    color: #fff;
+    cursor: pointer;
+}
+/* --------------form infor--------- */
+
+.contact-content {
+    margin-top: 70px;
+}
+
+.contact-infor {
+    font-size: 19px;
+}
+
+.contact-infor i {
+    width: 30px;
+    display: inline-block;
+    line-height: 1.5;
+
+}
+
+.contact-form {
+    font-size: 17px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #f13b2e;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    padding: 11px 16px;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+/* Background 2021 season */
+
+.background-mu img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social {
+   font-size: 35px;
+}
+
+#footer .social a {
+    color: #000;
+}
+
+#footer .social a:hover,
+#footer .copy-right a:hover
+ {
+    color: #f13b2e;
+}
+
+#footer .copy-right {
+    color: #000;
+    margin-left: -11px;
+    margin-top: 13px;
+}
+
+#footer .copy-right a {
+    color: #000;
+}
+
+
+
+
+.modal {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    max-width: calc(100% - 32px);
+    position: relative;
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    animation: modalFadeIn ease 0.4s;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 10px;
+}
+
+.modal-close:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #f13b2e;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+.ticket-icon {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 11px;
+    font-size: 17px;
+}
+
+.modal-input {
+    margin-bottom: 27px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+#pay {
+    font-size: 20px;
+    background-color: #f13b2e;
+    border: none;
+    color: #fff;
+    padding: 17px;
+}
+
+#pay:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#pay {
+    width: 100%;
+}
+
+.modal-footer {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-top: 2px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0.7;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
